@@ -1,0 +1,28 @@
+body{
+    background-color: aliceblue ;
+}
+
+h1{
+    color: darkslategrey;
+    font-weight: bold;
+}
+h2{
+    color: darkolivegreen;
+}
+h3{
+    color: seagreen;
+    font-weight: bold;
+}
+a{
+    color: lightcoral;
+}
+.info{
+    color: darkgreen;
+    font-weight: bold;
+}
+.error{
+    color: darkred;
+    font-weight: bold;
+}
+
+

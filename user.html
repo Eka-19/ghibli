@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Hello {{ session['username'] }}</h2>
+    <h2>Ghibli anime movies</h2>
+
+    {% for i in subjects %}
+
+        <p>Ghibli movie: {{ i }}</p>
+
+        {% if i=='My Neighbor Totoro' %}
+            <a href="https://www.netflix.com/ge/title/60032294">Link1</a>
+        {% elif i=='Spirited Away' %}
+            <a href="https://www.netflix.com/ge/title/60023642">Link2</a>
+        {% elif i=='Kiki’s Delivery Service' %}
+            <a href="https://www.netflix.com/ge/title/60027106">Link3</a>
+        {% else %}
+            <a href="https://www.netflix.com/ge/title/60027393">Link4</a>
+
+
+        {% endif %}
+
+    {% endfor %}
+
+<a href="{{url_for('home')}}"> მთავარი გვერდი </a>
+{% endblock %}
+
+
